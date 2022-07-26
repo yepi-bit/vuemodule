@@ -85,6 +85,11 @@ const routes = [
     name: 'antDesign',
     component: () => import(/* webpackChunkName: "about" */ '../views/AntDesign.vue')
   },
+  {
+    path: '/echart',
+    name: 'echart',
+    component: () => import(/* webpackChunkName: "about" */ '../views/echart.vue')
+  },
 ]
 
 const router = new VueRouter({
