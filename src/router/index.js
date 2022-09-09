@@ -90,6 +90,11 @@ const routes = [
     name: 'echart',
     component: () => import(/* webpackChunkName: "about" */ '../views/echart.vue')
   },
+  {
+    path: '/elementTable',
+    name: 'elementTable',
+    component: () => import(/* webpackChunkName: "about" */ '../views/ElementTable.vue')
+  },
 ]
 
 const router = new VueRouter({

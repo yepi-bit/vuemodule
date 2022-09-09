@@ -102,6 +102,12 @@
           >echart</t-button
         ></router-link
       >
+      |
+      <router-link to="/elementTable"
+        ><t-button variant="outline" theme="warning" ghost
+          >elementTable</t-button
+        ></router-link
+      >
     </div>
     <router-view />
   </div>

@@ -401,7 +401,7 @@ export function mapHjfbStatistics(id, data) {
 	var chinaMap = echarts.init(document.getElementById(id));
 	chinaMap.setOption({
 		tooltip: {
-			formatter: function(params) {//params, ticket, callback
+			formatter: function(params,ticket) {//params, ticket, callback
 				return params.seriesName + '<br />' + params.name + '：' + params.value
 			} //数据格式化
 		},
