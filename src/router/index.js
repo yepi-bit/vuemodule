@@ -95,6 +95,11 @@ const routes = [
     name: 'elementTable',
     component: () => import(/* webpackChunkName: "about" */ '../views/ElementTable.vue')
   },
+  {
+    path: '/testArr',
+    name: 'testArr',
+    component: () => import(/* webpackChunkName: "about" */ '../views/testArr.vue')
+  },
 ]
 
 const router = new VueRouter({

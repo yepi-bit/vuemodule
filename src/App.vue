@@ -108,6 +108,12 @@
           >elementTable</t-button
         ></router-link
       >
+      |
+      <router-link to="/testArr"
+        ><t-button variant="outline" theme="warning" ghost
+          >testArr</t-button
+        ></router-link
+      >
     </div>
     <router-view />
   </div>
