@@ -44,7 +44,11 @@
   }
 </script>
 <style>
+html {
+  font-size: 16px;
+}
   li{
     list-style: none;
+    font-size: 2rem;
   }
 </style>
