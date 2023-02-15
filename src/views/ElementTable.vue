@@ -15,7 +15,7 @@
           <span v-show="!scope.row.iseditor">{{ scope.row.date }}</span>
         </template>
       </el-table-column>
-      <el-table-column prop="name" label="姓名" width="280">
+      <el-table-column prop="name" label="姓名" sortable width="280">
         <template slot-scope="scope">
           <input
             type="text"

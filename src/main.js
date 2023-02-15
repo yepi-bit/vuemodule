@@ -13,6 +13,10 @@ import 'tdesign-vue/es/style/index.css';
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 
+// 自定义按钮权限
+import {hasIsBtn} from "@/utils/isBtn.js";
+Vue.prototype.hasIsBtn = hasIsBtn
+
 Vue.use(ElementUI);
 Vue.use(TDesign);
 Vue.prototype.$echarts = echarts;

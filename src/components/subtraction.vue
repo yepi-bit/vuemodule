@@ -4,7 +4,7 @@
         <h2>{{showNum}}</h2>
         <button @click="btnClick">-1</button>
         <button @click="btnClick2">-N</button>
-        <button @click="subAsync(2)">-2 Async</button>
+        <button @click="subAsync(2)" v-if="hasIsBtn('2')">-2 Async</button>
     </div>
 </template>
 
@@ -20,9 +20,12 @@
         computed:{
             ...mapState(['count']),
             ...mapMutations(['sub','subN']),
-            ...mapGetters(['showNum'])
+            ...mapGetters(['showNum','info'])
         },
-        methods:{
+      mounted() {
+        console.log(this.info)
+      },
+      methods:{
             ...mapActions(['subAsync']),
             btnClick(){
                 // this.$store.state.count--
